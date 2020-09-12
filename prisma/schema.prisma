@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://yuzhi:qweqwe@localhost:3306/demo"
+}
+
+model tbl_user {
+  id        Int     @default(autoincrement()) @id
+  name      String
+  age       Int?
+  phone     String?
+  weapon_id Int?
+}
+
+model tbl_weapon {
+  id     Int    @default(autoincrement()) @id
+  name   String
+  damage Int
+  weight Int
+  type   String
+}

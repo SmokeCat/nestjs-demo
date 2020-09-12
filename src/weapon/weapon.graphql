@@ -1,0 +1,11 @@
+type Weapon {
+  id: Int!
+  name: String!
+  damage: Int!
+  weight: Int!
+  type: String!
+}
+
+type Query {
+  weapon(id: Int!): Weapon
+}

@@ -1,0 +1,12 @@
+type User {
+  id: Int!
+  name: String!
+  age: Int
+  phone: String
+  weapon: Weapon
+}
+
+type Query {
+  user(id: Int!): User
+  count: Int
+}
